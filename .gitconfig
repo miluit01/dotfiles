@@ -1,0 +1,25 @@
+[user]
+    name = Ming Lu
+    email = ming.lu@daimler.com
+[http "https://gsep.daimler.com"]
+    sslCert = /home/luming1/Documents/10-Certificates/gsep/git_1068/client.crt
+    sslKey  = /home/luming1/Documents/10-Certificates/gsep/git_1068/client.key
+    sslVerify = false
+[http "https://git.swf.daimler.com"]
+    sslCert = /home/luming1/Documents/10-Certificates/gsep/git_mbition/cert-dn.crt
+    sslKey  = /home/luming1/Documents/10-Certificates/gsep/git_mbition/cert-dn.key
+    sslVerify = false
+[core]
+    autocrlf  = false
+    longpaths = true
+    editor    = vim
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[difftoll "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
+[merge]
+    tool = meld
+[mergetool "meld"]
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
